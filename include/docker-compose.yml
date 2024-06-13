@@ -1,0 +1,10 @@
+services:
+  envcheck:
+    env_file:
+      - .env
+      - path: "${OVERRIDE_ENV_FILE}"
+        required: false
+    environment:
+      - TARGET_MESSAGE=included
+      - OVERRIDE_ENV_FILE=${OVERRIDE_ENV_FILE}
+    build: .
