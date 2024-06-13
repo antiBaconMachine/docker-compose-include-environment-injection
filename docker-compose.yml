@@ -1,3 +1,2 @@
 include:
-  - path: include/docker-compose.yml
-    env_file: .env.include
+  - include/docker-compose.yml
